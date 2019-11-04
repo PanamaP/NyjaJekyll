@@ -192,6 +192,9 @@ aside {
     nav ul li ul li a:hover{
      background-color: #979797;
      }
+     .mobileSocial{
+        display: none;
+    }
  }
 @media only screen and (min-width: 600px){
    nav{
@@ -253,7 +256,9 @@ aside {
     .storSkjar{
         display: none;
     }
-    
+    .mobileSocial{
+        display: none;
+    }
 }
 @media only screen and (min-width: 768px) {
     nav {
@@ -272,6 +277,15 @@ aside {
     }
     .mobile{
         display: none;
+    }
+    .mobileSocial{
+        display: none;
+    }
+    
+}
+@media only screen and (min-width: 860px) {
+    .mobileSocial{
+        display: inline;
     }
 }
 @media only screen and (min-width: 992px) {
