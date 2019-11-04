@@ -56,7 +56,16 @@ aside { grid-template-columns: 1fr 1fr; grid-template-areas: "midja midja"  "hae
 
 @media only screen and (max-width: 600px) { nav { display: flex; flex-flow: column; }
   main { display: grid; grid-gap: 0; grid-template-areas: "article" "aside"; grid-template-columns: 1fr 1fr; }
-  .storSkjar { display: none; } }
+  .storSkjar { display: none; }
+  nav { width: 100%; height: 70px; padding-bottom: 24px; padding-left: 0; }
+  nav ul { float: left; }
+  nav ul li { float: left; list-style: none; position: relative; }
+  nav ul li a { display: block; font-family: Arial, Helvetica, sans-serif; color: black; font-size: 34px; padding: 22px 14px; text-decoration: none; background-color: #ffffff; opacity: 0.8; border-radius: 24px; }
+  nav ul li ul { display: none; position: absolute; background-color: #ffffff; padding: 10px; border-radius: 4px 4px 4px 4px; }
+  nav ul li:hover ul { display: block; }
+  nav ul li ul li { width: 100%; border-radius: 4px; padding: 2px; }
+  nav ul li ul li a { padding: 8px 14px; }
+  nav ul li ul li a:hover { background-color: #979797; } }
 
 @media only screen and (min-width: 600px) { nav { width: 100%; height: 70px; padding-bottom: 24px; padding-left: 0; }
   nav ul { float: left; }
