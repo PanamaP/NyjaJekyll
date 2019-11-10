@@ -125,7 +125,39 @@ aside {
     letter-spacing: 3px;
     text-shadow: 6px 1px black;
     }
-    
+.kassi{
+    width: 8em;
+    border-radius: .4em;
+    background-color: #ffffff;
+    text-align: center;
+}
+.textiAug{
+    border: 1px solid black;
+    font-weight: bold;
+    color: #000000;
+    padding-bottom: .3em;
+}
+.fadeIn{
+    position: relative;
+    animation: ease-in fadeInVinstri 2s;
+    animation-direction: normal;
+}
+@keyframes fadeInVinstri{
+    0%{
+        left: -25em;
+    }
+    100%{
+        left: 0;
+    }
+}
+@keyframes fadeInHaegri{
+    0%{
+        right: -25em;
+    }
+    100%{
+        right: 0;
+    }
+}
   
 @media only screen and (max-width: 600px)
  {
@@ -195,7 +227,23 @@ aside {
      .mobileSocial{
         display: none;
     }
+    .fadeIn{
+        position: relative;
+        animation: ease-in fadeInHaegri 2s;
+        animation-direction: normal;
+    }
+    .kassi{
+        width: 8em;
+        border-radius: .4em;
+        background-color: #ffffff;
+        text-align: center;
+    }
  }
+@media only screen and (min-width: 300px){
+    .kassi{
+        height: 75%;
+    }
+}
 @media only screen and (min-width: 600px){
    nav{
        width: 100%;
@@ -259,6 +307,11 @@ aside {
     .mobileSocial{
         display: none;
     }
+    .fadeIn{
+        position: relative;
+        animation: ease-in fadeInHaegri 2s;
+        animation-direction: normal;
+    }
 }
 @media only screen and (min-width: 768px) {
     nav {
@@ -281,7 +334,11 @@ aside {
     .mobileSocial{
         display: none;
     }
-    
+    .fadeIn{
+    position: relative;
+    animation: ease-in fadeInVinstri 2s;
+    animation-direction: normal;
+    }
 }
 @media only screen and (min-width: 860px) {
     .mobileSocial{
