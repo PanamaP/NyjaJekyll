@@ -14,6 +14,8 @@ a { color: brown; }
 
 li { color: whitesmoke; }
 
+.a { color: whitesmoke; }
+
 img { max-width: 100%; height: auto; }
 
 .myndAuglysingar { position: fixed; margin-right: 20em; }
@@ -56,7 +58,9 @@ aside { grid-template-columns: 1fr 1fr; grid-template-areas: "midja midja"  "hae
 
 .kassi { width: 8em; border-radius: .4em; background-color: #ffffff; text-align: center; }
 
-.textiAug { border: 1px solid black; font-weight: bold; color: #000000; padding-bottom: .3em; }
+.textiAug { border: 1px solid black; font-weight: bold; color: #000000; padding-bottom: .3em; margin-bottom: 1em; }
+
+.clickTexti { font-weight: bold; color: #000000; }
 
 .fadeIn { position: relative; animation: ease-in fadeInVinstri 2s; animation-direction: normal; }
 
@@ -65,6 +69,8 @@ aside { grid-template-columns: 1fr 1fr; grid-template-areas: "midja midja"  "hae
 
 @keyframes fadeInHaegri { 0% { right: -25em; }
   100% { right: 0; } }
+
+@media only screen and (min-width: 300px) { .kassi { height: 8em; } }
 
 @media only screen and (max-width: 600px) { nav { display: flex; flex-flow: column; }
   main { display: grid; grid-gap: 0; grid-template-areas: "article" "aside"; grid-template-columns: 1fr 1fr; }
@@ -82,12 +88,11 @@ aside { grid-template-columns: 1fr 1fr; grid-template-areas: "midja midja"  "hae
   .fadeIn { position: relative; animation: ease-in fadeInHaegri 2s; animation-direction: normal; }
   .kassi { width: 8em; border-radius: .4em; background-color: #ffffff; text-align: center; } }
 
-@media only screen and (min-width: 300px) { .kassi { height: 75%; } }
-
-@media only screen and (min-width: 600px) { nav { width: 100%; height: 70px; padding-bottom: 24px; padding-left: 0; }
+@media only screen and (min-width: 600px) { nav { width: 100%; height: 100px; padding-bottom: 24px; padding-left: 0; }
   nav ul { float: left; }
   nav ul li { float: left; list-style: none; position: relative; }
-  nav ul li a { display: block; font-family: Arial, Helvetica, sans-serif; color: black; font-size: 34px; padding: 22px 14px; text-decoration: none; background-color: #ffffff; opacity: 0.8; border-radius: 24px; }
+  .menuMerki { font-size: 50px; color: brown; }
+  nav ul li a { display: block; font-family: Arial, Helvetica, sans-serif; color: black; font-size: 14px; text-decoration: none; opacity: 0.8; border-radius: 34px; }
   nav ul li ul { display: none; position: absolute; background-color: #ffffff; padding: 10px; border-radius: 4px 4px 4px 4px; }
   nav ul li:hover ul { display: block; }
   nav ul li ul li { width: 100%; border-radius: 4px; padding: 2px; }
@@ -103,6 +108,7 @@ aside { grid-template-columns: 1fr 1fr; grid-template-areas: "midja midja"  "hae
   .storSkjar { display: inline; }
   .mobile { display: none; }
   .mobileSocial { display: none; }
+  .kassi { height: 75%; }
   .fadeIn { position: relative; animation: ease-in fadeInVinstri 2s; animation-direction: normal; } }
 
 @media only screen and (min-width: 860px) { .mobileSocial { display: inline; } }
@@ -126,5 +132,59 @@ aside { grid-template-columns: 1fr 1fr; grid-template-areas: "midja midja"  "hae
 .icon-github:before { content: "\eab0"; color: black; }
 
 .staerd { padding: 20px; font-size: 30px; width: 50px; text-align: center; text-decoration: none; margin: 5px 2px; background-color: #ffffff; opacity: 0.8; }
+
+table { border-collapse: separate; border-spacing: 0; color: #4a4a4d; font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif; background-color: rgba(240, 240, 242, 0.9); border-radius: .4em; }
+
+th, td { padding: 10px 15px; vertical-align: middle; }
+
+thead { background: linear-gradient(#ca4242, brown); color: #fff; font-size: 11px; text-transform: uppercase; }
+
+th:first-child { border-top-left-radius: 5px; text-align: left; }
+
+th:last-child { border-top-right-radius: 5px; }
+
+td { border-bottom: 1px solid #cecfd5; border-right: 1px solid #cecfd5; }
+
+td:first-child { border-left: 1px solid #cecfd5; }
+
+.book-title { color: #395870; display: block; }
+
+.text-offset { color: #7c7c80; font-size: 12px; }
+
+.item-stock, .item-qty { text-align: center; }
+
+.item-price { text-align: right; }
+
+.item-multiple { display: block; }
+
+tfoot { text-align: right; }
+
+tfoot tr:last-child { background: #f0f0f2; color: green; font-weight: bold; }
+
+tfoot tr:last-child td:first-child { border-bottom-left-radius: 5px; }
+
+tfoot tr:last-child td:last-child { border-bottom-right-radius: 5px; }
+
+*, *:before, *:after { box-sizing: border-box; }
+
+form { border: 1px solid #c6c7cc; background-color: rgba(240, 240, 242, 0.4); border-radius: 5px; font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif; overflow: hidden; padding: 1em; margin: 5em; }
+
+fieldset { border: 0; margin: 0; padding: 0; }
+
+input { border-radius: 5px; font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif; margin: 0; }
+
+.account-info { padding: 20px 20px 0 20px; }
+
+.account-info label { color: #4a4a4d; display: block; font-weight: bold; margin-bottom: 20px; }
+
+.account-info input { background: #fff; border: 1px solid #c6c7cc; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1); color: #636466; padding: 6px; margin-top: 6px; width: 100%; }
+
+.account-action { background: #f0f0f2; border-top: 1px solid #c6c7cc; padding: 20px; }
+
+.account-action .btn { background: linear-gradient(#49708f, #293f50); border: 0; color: #fff; cursor: pointer; font-weight: bold; float: left; padding: 8px 16px; }
+
+.account-action label { color: #7c7c80; font-size: 12px; float: left; margin: 10px 0 0 20px; }
+
+.choice { padding: 0; margin: 0; }
 
 /*# sourceMappingURL=styles.css.map */

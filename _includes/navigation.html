@@ -2,7 +2,7 @@
 <nav class="mobile">
 
 <ul>
-    <li ><a href="#">&#9776;</a>
+    <li ><a href="#" class="menuMerki">&#9776;</a>
       <ul>
           {% for item in site.data.navigation %}
           <li><a href="{{ item.link }}" {% if page.url == item.link %}style="color: brown;"{% endif %}>
