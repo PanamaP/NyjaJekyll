@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="/assets/css/styles.css">
-        <title>Fresh Drop Info</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <link rel="icon" type="image/png" href="/assets/fonts/running-256.ico">
-</head>
-<body>
-        <form>
+I"¦<form>
   <fieldset class="account-info">
     <label>
         Name<input type="text" name="name" placeholder="Full name" required="" autofocus="" />
@@ -46,14 +34,11 @@
     <input type="checkbox" name="list" value="pricedropList" /> Price Drop Exclusive List
  </label>
   </fieldset>
-  <div class="buttonholder">
+  <div class="buttonHolder">
   <fieldset class="account-action">
-    <input class="btn" type="submit" name="submit" value="Send" />
+    <input type="submit" name="submit" value="Send" />
   </fieldset>
   </div>
 </form>
 
-
-    
-</body>
-</html>
+:ET

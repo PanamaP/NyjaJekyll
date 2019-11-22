@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="/assets/css/styles.css">
-        <title>Fresh Drop Info</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <link rel="icon" type="image/png" href="/assets/fonts/running-256.ico">
-</head>
-<body>
-        <form>
+I"Õ<form>
   <fieldset class="account-info">
     <label>
         Name<input type="text" name="name" placeholder="Full name" required="" autofocus="" />
@@ -34,26 +22,23 @@
     <option value="newShoe" selected="">New Shoe</option>
     <option value="freeCleaning">Free Cleaning</option>
     <option value="shoutout">A shoutout</option>
-    <option value="nothing">Nothing</option>
   </select>
     </label>
-    <label>
+    &lt;label width:100%&gt;
     Subscribe To Our Email List
     Find Out When Your News Hit Our Blog!
     <br />
     <input type="checkbox" name="list" value="emailList" checked="" /> Subscribe To All
-    <input type="checkbox" name="list" value="newdropEmailList" /> New Drop News
-    <input type="checkbox" name="list" value="pricedropList" /> Price Drop Exclusive List
- </label>
+    <input type="checkbox" name="list" value="newdropEmailList" /> Subscribe to New Drop News
+    <input type="checkbox" name="list" value="Sunday" /> Price Drop Exclusive List
+ &lt;/label&gt;
   </fieldset>
-  <div class="buttonholder">
   <fieldset class="account-action">
-    <input class="btn" type="submit" name="submit" value="Send" />
+    <input class="btn" type="submit" name="submit" value="Login" />
+    <label>
+      <input type="checkbox" name="remember" /> Stay signed in
+    </label>
   </fieldset>
-  </div>
 </form>
 
-
-    
-</body>
-</html>
+:ET
