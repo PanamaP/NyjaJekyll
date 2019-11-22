@@ -17,7 +17,7 @@ title: Fresh Drop Info
     <label>
         Write Your info here
         <br>
-        <textarea rows="4" name="comment"></textarea>
+        <textarea rows="4" name="comment" required></textarea>
     </label>
     <label>
     What would you like in return?

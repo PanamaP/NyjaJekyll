@@ -1,4 +1,4 @@
-I",<form>
+I"¾<form>
   <fieldset class="account-info">
     <label>
         Name<input type="text" name="name" placeholder="Full name" required="" autofocus="" />
@@ -13,7 +13,7 @@
     <label>
         Write Your info here
         <br />
-        <textarea rows="4" name="comment"></textarea>
+        <textarea rows="4" name="comment" required=""></textarea>
     </label>
     <label>
     What would you like in return?
@@ -22,20 +22,23 @@
     <option value="newShoe" selected="">New Shoe</option>
     <option value="freeCleaning">Free Cleaning</option>
     <option value="shoutout">A shoutout</option>
+    <option value="nothing">Nothing</option>
   </select>
     </label>
     <label>
-    <input type="checkbox" name="day" value="Friday" checked="" /> Friday
-    <input type="checkbox" name="day" value="Saturday" /> Saturday
-    <input type="checkbox" name="day" value="Sunday" /> Sunday
+    Subscribe To Our Email List
+    Find Out When Your News Hit Our Blog!
+    <br />
+    <input type="checkbox" name="list" value="emailList" checked="" /> Subscribe To All
+    <input type="checkbox" name="list" value="newdropEmailList" /> New Drop News
+    <input type="checkbox" name="list" value="pricedropList" /> Price Drop Exclusive List
  </label>
   </fieldset>
+  <div class="buttonholder">
   <fieldset class="account-action">
-    <input class="btn" type="submit" name="submit" value="Login" />
-    <label>
-      <input type="checkbox" name="remember" /> Stay signed in
-    </label>
+    <input class="btn" type="submit" name="submit" value="Send" />
   </fieldset>
+  </div>
 </form>
 
 :ET
